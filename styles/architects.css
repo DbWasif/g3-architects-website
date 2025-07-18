@@ -1,34 +1,38 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.text-primary{
+.text-primary {
     color: #FF900E;
 }
-.dark-1{
+
+.dark-1 {
     color: #131313;
 }
-.dark-2{
+
+.dark-2 {
     color: #000000;
 }
-.dark-3{
+
+.dark-3 {
     color: #727272;
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 244, 231, 1);
 }
-.btn-primary{
+
+.btn-primary {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 1.3125rem 1.5rem 1.25rem 1.5625rem;
@@ -37,11 +41,13 @@
     border: none;
     border-radius: 0.5rem;
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.section-title{
+
+.section-title {
     font-size: 2.8125rem;
     font-weight: bold;
 }
@@ -51,89 +57,103 @@ main{
 
 
 /* Navbar related styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.brand{
+
+.brand {
     font-size: 2.8rem;
     font-weight: bold;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     margin-right: 1.875rem;
     font-weight: 500;
     font-size: 1.125rem;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1920px;
     margin: 0 auto;
 }
 
 /* banner related styles */
-.banner-content{
+.banner-content {
     max-width: 54.0625rem;
     margin: 0 auto 3.125rem auto;
     text-align: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
 }
-.banner-description{
+
+.banner-description {
     font-size: 1rem;
     margin-bottom: 2rem;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
     margin-bottom: 2.8125rem;
 }
 
 /* team and feature related styles */
-.teams{
+.teams {
     align-items: center;
     margin-top: 5.3125rem;
     margin-bottom: 8.125rem;
     column-gap: 4.5625rem;
 }
-.our-features{
+
+.our-features {
     max-width: 537px;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.feature-title{
+
+.feature-title {
     font-size: 2.8125rem;
     font-weight: 700;
     margin-bottom: 0;
 }
-.feature-description{
+
+.feature-description {
     font-size: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     margin: 0 0;
 }
-#quick-list{
+
+#quick-list {
     font-weight: 500;
 }
 
 /* some fact related card */
-.some-facts{
+.some-facts {
     margin-bottom: 11.3rem;
 }
-.facts-container{
+
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 7.760625rem;
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #FF900E;
     width: 18.13rem;
     height: 18.13rem;
@@ -142,81 +162,126 @@ main{
     justify-content: center;
     align-items: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8125rem;
     font-weight: 600;
     margin-top: 0.625rem;
     margin-bottom: 0.3125rem;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
 }
-.section-title{
+
+.section-title {
     margin-bottom: 1.5rem;
 }
-#fact-description{
+
+#fact-description {
     max-width: 33.875rem;
     margin-top: 0;
     margin-bottom: 3.13rem;
 }
 
 /* sponsor styles */
-.sponsor-info{
+.sponsor-info {
     margin: 0 auto;
     max-width: 32.75rem;
     text-align: center;
 }
-.sponsor-title{
+
+.sponsor-title {
     margin-top: 0;
 }
-.sponsor-description{
+
+.sponsor-description {
     margin: 0 auto 3.125rem auto;
 }
-.sponsor-companies{
+
+.sponsor-companies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 9.7025rem;
 }
-.sponsor-companies img{
+
+.sponsor-companies img {
     filter: grayscale(100%);
+}
+
+/* feature section start */
+.features{
+    gap: 146px;
+}
+#feature-section-title {
+    border-left: 0.3125rem solid #FF900E;
+    padding-left: 1.25rem;
+}
+
+.section-title{
+    max-width: 29.25rem;
+}
+.feature-des{
+    margin-bottom: 1.875rem;
+}
+
+.feature-card {
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.feature-card .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, 
+
+    .navbar,
     .nav-links,
-    .teams
-    {
+    .teams {
         flex-direction: column;
     }
-    .nav-item{
+
+    .nav-item {
         margin-bottom: 10px;
     }
-    .banner-description{
+
+    .banner-description {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .team-img-container,
-    .facts-container, 
-    .sponsor-companies
-    {
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
-    .some-facts{
+
+    .some-facts {
         justify-items: center;
     }
-    .some-facts > p{
+
+    .some-facts>p {
         text-align: center;
     }
-    .facts-container{
+
+    .facts-container {
         justify-items: center;
     }
-    .our-features{
+
+    .our-features {
         margin: 0 1rem;
     }
-    .sponsor-companies{
+
+    .sponsor-companies {
         justify-items: center;
         gap: 50px;
     }
@@ -225,19 +290,21 @@ main{
 
 /* medium size device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
+
     .team-img-container,
-    .facts-container, 
-    .sponsor-companies
-    {
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: repeat(2, 1fr);
     }
-    .some-facts{
+
+    .some-facts {
         justify-items: center;
     }
-    .sponsor-companies{
+
+    .sponsor-companies {
         justify-items: center;
         gap: 50px;
     }
