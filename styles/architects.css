@@ -312,6 +312,15 @@ main {
         margin: 0 1rem;
     }
 
+    .features .feature-des{
+        margin: 0 5px 0 5px;
+        text-align: center;
+    }
+
+    #feature-section-title{
+        margin-left: 10px;
+    }
+
     .sponsor-companies {
         justify-items: center;
         gap: 50px;
